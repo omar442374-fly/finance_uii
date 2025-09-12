@@ -7,55 +7,55 @@ import 'app_fonts.dart';
 class AppStyles {
   static TextStyle primaryHeadLineStyle = TextStyle(
     fontFamily: AppFonts.mainfontname,
-    fontSize: 30.sp,
+    fontSize: 30,
     fontWeight: FontWeight.bold,
     color: AppColors.primaryColor,
   );
   static TextStyle move15w500 = TextStyle(
     fontFamily: AppFonts.mainfontname,
-    fontSize: 15.sp,
+    fontSize: 15,
     fontWeight: FontWeight.w500,
     color: AppColors.primaryColor,
   );
   static TextStyle secondryHeadLineStyle = TextStyle(
     fontFamily: AppFonts.mainfontname,
-    fontSize: 16.sp,
+    fontSize: 16,
     fontWeight: FontWeight.w500,
     color: AppColors.secondaryColor,
   );
   static TextStyle black16w600 = TextStyle(
     fontFamily: AppFonts.mainfontname,
-    fontSize: 16.sp,
+    fontSize: 16,
     fontWeight: FontWeight.w600,
     color: AppColors.blackColor,
   );
   static TextStyle black14w500 = TextStyle(
     fontFamily: AppFonts.mainfontname,
-    fontSize: 14.sp,
+    fontSize: 14,
     fontWeight: FontWeight.w500,
     color: AppColors.blackColor,
   );
   static TextStyle Primary15w800 = TextStyle(
     fontFamily: AppFonts.mainfontname,
-    fontSize: 15.sp,
+    fontSize: 15,
     fontWeight: FontWeight.bold,
     color: AppColors.underPageColor,
   );
   static TextStyle grey12w500 = TextStyle(
     fontFamily: AppFonts.mainfontname,
-    fontSize: 12.sp,
+    fontSize: 12,
     fontWeight: FontWeight.w500,
     color: AppColors.greyColor,
   );
   static TextStyle grey15w500 = TextStyle(
     fontFamily: AppFonts.mainfontname,
-    fontSize: 15.sp,
+    fontSize: 15,
     fontWeight: FontWeight.w500,
     color: AppColors.greyColor,
   );
   static TextStyle white15w600 = TextStyle(
     fontFamily: AppFonts.mainfontname,
-    fontSize: 15.sp,
+    fontSize: 15,
     fontWeight: FontWeight.w600,
     color: AppColors.backgroundColor,
   );

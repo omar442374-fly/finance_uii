@@ -10,6 +10,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class RegisterScreen extends StatefulWidget {
+  const RegisterScreen({super.key});
+
   @override
   State<RegisterScreen> createState() => _RegisterScreenState();
 }
@@ -49,6 +51,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   if (value!.isEmpty) {
                     return "Enter your username";
                   }
+                  return null;
                 },
               ),
               SizedBox(height: 12.h),
@@ -59,6 +62,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   if (value!.isEmpty) {
                     return "Enter your email";
                   }
+                  return null;
                 },
               ),
               SizedBox(height: 12.h),
@@ -72,6 +76,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   if (value.length < 8) {
                     return "Password must be at least 8 charchters";
                   }
+                  return null;
                 },
               ),
               SizedBox(height: 12.h),
@@ -85,6 +90,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   if (confirmPasswordControler.text != passwordControler.text) {
                     return "Pasword must match";
                   }
+                  return null;
                 },
               ),
               SizedBox(height: 30.h),

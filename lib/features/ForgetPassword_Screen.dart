@@ -10,6 +10,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
 class ForgetpasswordScreen extends StatefulWidget {
+  const ForgetpasswordScreen({super.key});
+
   @override
   State<ForgetpasswordScreen> createState() => _ForgetpasswordScreenState();
 }
@@ -47,6 +49,7 @@ class _ForgetpasswordScreenState extends State<ForgetpasswordScreen> {
                   if (p0!.isEmpty) {
                     return "Enter your email";
                   }
+                  return null;
                 },
               ),
               SizedBox(height: 38.h),

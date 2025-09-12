@@ -1,8 +1,6 @@
-import 'package:finance_ui/Routing/app_routes.dart';
 import 'package:finance_ui/core/Style/app_colors.dart';
 import 'package:finance_ui/core/Style/app_styles.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:go_router/go_router.dart';
 
 class TowStylesText extends StatelessWidget {

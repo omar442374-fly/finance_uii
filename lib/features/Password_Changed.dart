@@ -20,7 +20,7 @@ class PasswordChanged extends StatelessWidget {
             SizedBox(height: 35.h),
             Text("Password Changed!", style: AppStyles.primaryHeadLineStyle),
             SizedBox(height: 8.h),
-            Container(
+            SizedBox(
               width: 226,
               height: 46,
               child: Text(

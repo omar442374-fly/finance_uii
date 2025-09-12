@@ -4,6 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
 class BackArrowWidget extends StatelessWidget {
+  const BackArrowWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Align(

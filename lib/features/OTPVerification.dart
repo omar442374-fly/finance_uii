@@ -2,8 +2,6 @@ import 'package:finance_ui/Routing/app_routes.dart';
 import 'package:finance_ui/core/Style/app_colors.dart';
 import 'package:finance_ui/core/widgets/Tow_styles_text.dart';
 import 'package:finance_ui/core/widgets/back_arrow_widget.dart';
-import 'package:finance_ui/core/widgets/otp_Collection.dart';
-import 'package:finance_ui/core/widgets/otp_numbers_widgets.dart';
 import 'package:finance_ui/core/widgets/primary_elevated_buttons.dart';
 import 'package:finance_ui/core/widgets/primary_text_widget.dart';
 import 'package:finance_ui/core/widgets/secondary_text_widget.dart';
@@ -48,6 +46,13 @@ class _OtpverificationState extends State<Otpverification> {
               Padding(
                 padding: EdgeInsets.only(left: 22.w, right: 22.w),
                 child: PinCodeTextField(
+                  controller: codeControler,
+                  validator: (value) {
+                      if (value!.length < 4) {
+                        return "Enter the code";
+                      }
+                  },
+                  keyboardType: TextInputType.number,
                   appContext: context,
                   length: 4,
                   obscureText: false,
@@ -72,7 +77,9 @@ class _OtpverificationState extends State<Otpverification> {
               PrimaryButtons(
                 title: "Verify",
                 onPress: () {
-                  GoRouter.of(context).push(AppRoutes.newPassword);
+                  if (formkey.currentState!.validate()) {
+                    GoRouter.of(context).push(AppRoutes.newPassword);
+                  }
                 },
               ),
               SizedBox(height: 352.h),

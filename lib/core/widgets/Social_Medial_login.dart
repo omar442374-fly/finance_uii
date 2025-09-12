@@ -3,7 +3,7 @@ import 'package:finance_ui/core/widgets/CustomIconButtonidget.dart';
 import 'package:flutter/material.dart';
 
 class SocialMedialLogin extends StatelessWidget {
-  SocialMedialLogin({super.key});
+  const SocialMedialLogin({super.key});
 
   @override
   Widget build(BuildContext context) {

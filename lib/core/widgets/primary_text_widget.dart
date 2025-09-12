@@ -11,10 +11,7 @@ class PrimaryTextWidget extends StatelessWidget {
       alignment: Alignment.topLeft,
       child: Padding(
         padding: EdgeInsets.only(top: 28.h, left: 22.w),
-        child: Text(
-          text,
-          style: AppStyles.primaryHeadLineStyle,
-        ),
+        child: Text(text, style: AppStyles.primaryHeadLineStyle),
       ),
     );
   }

@@ -1,5 +1,4 @@
 import 'package:finance_ui/Routing/app_routes.dart';
-import 'package:finance_ui/core/Style/app_colors.dart';
 import 'package:finance_ui/core/Style/app_styles.dart';
 import 'package:finance_ui/core/widgets/Social_Medial_login.dart';
 import 'package:finance_ui/core/widgets/Textfeild_widget.dart';
@@ -53,6 +52,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         if (vlue!.isEmpty) {
                           return "Enter your email";
                         }
+                        return null;
                       },
                     ),
                     SizedBox(height: 15.h),
@@ -62,8 +62,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         if (vlue!.isEmpty) {
                           return "Enter your password";
                         }
-                        if (vlue.length < 8)
+                        if (vlue.length < 8) {
                           return "Password must be at least 8 charchters";
+                          return null;
+                        }
                       },
                       hinttext: "Enter your password",
                       isPassword: isPass,
