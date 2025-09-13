@@ -64,8 +64,8 @@ class _LoginScreenState extends State<LoginScreen> {
                         }
                         if (vlue.length < 8) {
                           return "Password must be at least 8 charchters";
-                          return null;
                         }
+                        return null;
                       },
                       hinttext: "Enter your password",
                       isPassword: isPass,
@@ -114,7 +114,9 @@ class _LoginScreenState extends State<LoginScreen> {
                     PrimaryButtons(
                       title: "Login",
                       onPress: () {
-                        if (formkey.currentState!.validate()) {}
+                        if (formkey.currentState!.validate()) {
+                          GoRouter.of(context).push(AppRoutes.mainscreen);
+                        }
                       },
                     ),
                     Textbetweenlinewidget(text: "Or Login with"),

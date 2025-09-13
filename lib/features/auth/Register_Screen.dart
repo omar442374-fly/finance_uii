@@ -8,6 +8,7 @@ import 'package:finance_ui/core/widgets/primary_text_widget.dart';
 import 'package:finance_ui/core/widgets/textbetweenlinewidget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 
 class RegisterScreen extends StatefulWidget {
   const RegisterScreen({super.key});
@@ -97,7 +98,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
               PrimaryButtons(
                 title: "Register",
                 onPress: () {
-                  if (formkey.currentState!.validate()) {}
+                  if (formkey.currentState!.validate()) {
+                    GoRouter.of(context).push(AppRoutes.loginPage);
+                  }
                 },
               ),
               Textbetweenlinewidget(text: "Or Register with"),

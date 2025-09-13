@@ -51,6 +51,7 @@ class _OtpverificationState extends State<Otpverification> {
                       if (value!.length < 4) {
                         return "Enter the code";
                       }
+                      return null;
                   },
                   keyboardType: TextInputType.number,
                   appContext: context,

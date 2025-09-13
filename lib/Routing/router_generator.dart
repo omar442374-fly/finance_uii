@@ -1,10 +1,11 @@
 import 'package:finance_ui/Routing/app_routes.dart';
-import 'package:finance_ui/features/ForgetPassword_Screen.dart';
-import 'package:finance_ui/features/Login_Screen.dart';
-import 'package:finance_ui/features/OTPVerification.dart';
-import 'package:finance_ui/features/Password_Changed.dart';
-import 'package:finance_ui/features/Register_Screen.dart';
-import 'package:finance_ui/features/new_password.dart';
+import 'package:finance_ui/features/auth/ForgetPassword_Screen.dart';
+import 'package:finance_ui/features/auth/Login_Screen.dart';
+import 'package:finance_ui/features/Verfication/OTPVerification.dart';
+import 'package:finance_ui/features/auth/Password_Changed.dart';
+import 'package:finance_ui/features/auth/Register_Screen.dart';
+import 'package:finance_ui/features/auth/new_password.dart';
+import 'package:finance_ui/features/main/main_screen.dart';
 import 'package:finance_ui/features/onbording_Screen.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -49,6 +50,11 @@ class RouterGenerator {
         path: AppRoutes.passwordChanged,
         name: AppRoutes.passwordChanged,
         builder: (context, state) => PasswordChanged(),
+      ),
+      GoRoute(
+        path: AppRoutes.mainscreen,
+        name: AppRoutes.mainscreen,
+        builder: (context, state) => MainScreen(),
       ),
     ],
   );

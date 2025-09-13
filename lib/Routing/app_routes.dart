@@ -6,4 +6,6 @@ class AppRoutes {
   static final String otpVerification = "/OTPVerification.dart";
   static final String newPassword = "/new_password.dart";
   static final String passwordChanged = "/Password_Changed.dart";
+  static final String mainscreen = "/main_screen.dart";
+
 }
