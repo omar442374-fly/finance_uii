@@ -1,11 +1,14 @@
 import 'package:finance_ui/core/Style/app_colors.dart';
 import 'package:finance_ui/core/Style/app_styles.dart';
+import 'package:finance_ui/features/main/add_page.dart';
+import 'package:finance_ui/features/main/card_page.dart';
 import 'package:finance_ui/features/main/home_page.dart';
+import 'package:finance_ui/features/main/profile_page.dart';
+import 'package:finance_ui/features/main/statistcs_page.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
-
   @override
   State<MainScreen> createState() => _MainScreenState();
 }
@@ -14,26 +17,10 @@ class _MainScreenState extends State<MainScreen> {
   int currentIndex = 0;
   List<Widget> screens = [
     HomePage(),
-    Container(
-      height: double.infinity,
-      width: double.infinity,
-      color: const Color.fromARGB(255, 0, 0, 0),
-    ),
-    Container(
-      height: double.infinity,
-      width: double.infinity,
-      color: const Color.fromARGB(255, 255, 94, 0),
-    ),
-    Container(
-      height: double.infinity,
-      width: double.infinity,
-      color: Colors.amber,
-    ),
-    Container(
-      height: double.infinity,
-      width: double.infinity,
-      color: const Color.fromARGB(255, 0, 0, 0),
-    ),
+    CardPage(),
+    AddTransactionScreen(),
+    StatistcsPage(),
+    ProfilePage(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -61,7 +48,11 @@ class _MainScreenState extends State<MainScreen> {
             label: "Card",
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.add_circle_rounded, size: 45),
+            icon: Icon(
+              Icons.add_circle_rounded,
+              size: 45,
+              color: AppColors.primaryColor,
+            ),
             label: "",
           ),
           BottomNavigationBarItem(

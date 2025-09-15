@@ -48,10 +48,10 @@ class _OtpverificationState extends State<Otpverification> {
                 child: PinCodeTextField(
                   controller: codeControler,
                   validator: (value) {
-                      if (value!.length < 4) {
-                        return "Enter the code";
-                      }
-                      return null;
+                    if (value!.length < 4) {
+                      return "Enter the code";
+                    }
+                    return null;
                   },
                   keyboardType: TextInputType.number,
                   appContext: context,
@@ -68,7 +68,7 @@ class _OtpverificationState extends State<Otpverification> {
                     activeFillColor: AppColors.backgroundColor,
                     inactiveColor: AppColors.greyColor,
                     inactiveFillColor: Color(0xffE8ECF4),
-                    selectedColor: AppColors.blackColor,
+                    selectedColor: AppColors.semiBlackColor,
                     selectedFillColor: AppColors.backgroundColor,
                   ),
                 ),

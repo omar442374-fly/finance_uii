@@ -29,9 +29,9 @@ class _NewPasswordState extends State<NewPassword> {
                 "Your new password must be unique from those previously used.",
           ),
           SizedBox(height: 32.h),
-          TextfeildWidget(hinttext: "New Password"),
+          TextfeildWidget(hinttext: "New Password",inputType: TextInputType.text,),
           SizedBox(height: 15.h),
-          TextfeildWidget(hinttext: "Confirm Password"),
+          TextfeildWidget(hinttext: "Confirm Password",inputType: TextInputType.text,),
           SizedBox(height: 38.h),
           PrimaryButtons(
             title: "Reset Password",

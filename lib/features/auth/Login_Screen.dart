@@ -46,6 +46,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: [
                     SizedBox(height: 32.h),
                     TextfeildWidget(
+                      inputType: TextInputType.emailAddress,
                       hinttext: "Enter your email",
                       controller: emailController,
                       validator: (vlue) {
@@ -57,6 +58,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     SizedBox(height: 15.h),
                     TextfeildWidget(
+                      inputType: TextInputType.text,
                       controller: passwordController,
                       validator: (vlue) {
                         if (vlue!.isEmpty) {
@@ -77,8 +79,8 @@ class _LoginScreenState extends State<LoginScreen> {
                         },
                         icon: Icon(
                           isPass
-                              ? Icons.remove_red_eye_sharp
-                              : Icons.visibility_off_sharp,
+                              ? Icons.visibility_off_sharp
+                              : Icons.remove_red_eye_sharp,
                         ),
                       ),
                     ),

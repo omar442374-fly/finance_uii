@@ -46,6 +46,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               PrimaryTextWidget(text: "Hello! Register to get started"),
               SizedBox(height: 32.h),
               TextfeildWidget(
+                inputType: TextInputType.text,
                 hinttext: "Username",
                 controller: usernameControler,
                 validator: (value) {
@@ -57,6 +58,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               ),
               SizedBox(height: 12.h),
               TextfeildWidget(
+                inputType: TextInputType.emailAddress,
                 hinttext: "Email",
                 controller: emailControler,
                 validator: (value) {
@@ -68,6 +70,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               ),
               SizedBox(height: 12.h),
               TextfeildWidget(
+                inputType: TextInputType.text,
                 hinttext: "Password",
                 controller: passwordControler,
                 validator: (value) {
@@ -82,6 +85,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               ),
               SizedBox(height: 12.h),
               TextfeildWidget(
+                inputType: TextInputType.text,
                 hinttext: "Confirm password",
                 controller: confirmPasswordControler,
                 validator: (value) {

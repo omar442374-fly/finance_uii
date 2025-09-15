@@ -5,6 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class TextfeildWidget extends StatelessWidget {
   String? hinttext;
+  TextInputType inputType;
   bool? isPassword;
   double? width;
   IconButton? suffix;
@@ -12,6 +13,7 @@ class TextfeildWidget extends StatelessWidget {
   final String? Function(String?)? validator;
   TextfeildWidget({
     super.key,
+    required this.inputType,
     this.hinttext,
     this.isPassword,
     this.suffix,
@@ -25,6 +27,7 @@ class TextfeildWidget extends StatelessWidget {
     return SizedBox(
       width: width ?? 331.w,
       child: TextFormField(
+        keyboardType: inputType,
         controller: controller,
         validator: validator,
         obscureText: isPassword ?? false,

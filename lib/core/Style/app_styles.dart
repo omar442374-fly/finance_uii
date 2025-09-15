@@ -10,6 +10,12 @@ class AppStyles {
     fontWeight: FontWeight.bold,
     color: AppColors.primaryColor,
   );
+  static TextStyle primarymainpageStyle = TextStyle(
+    fontFamily: AppFonts.secondfontname,
+    fontSize: 18,
+    fontWeight: FontWeight.bold,
+    color: AppColors.blackColor,
+  );
   static TextStyle move15w500 = TextStyle(
     fontFamily: AppFonts.mainfontname,
     fontSize: 15,
@@ -26,13 +32,13 @@ class AppStyles {
     fontFamily: AppFonts.mainfontname,
     fontSize: 16,
     fontWeight: FontWeight.w600,
-    color: AppColors.blackColor,
+    color: AppColors.semiBlackColor,
   );
   static TextStyle black14w500 = TextStyle(
     fontFamily: AppFonts.mainfontname,
     fontSize: 14,
     fontWeight: FontWeight.w500,
-    color: AppColors.blackColor,
+    color: AppColors.semiBlackColor,
   );
   static TextStyle Primary15w800 = TextStyle(
     fontFamily: AppFonts.mainfontname,

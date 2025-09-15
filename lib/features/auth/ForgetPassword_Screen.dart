@@ -44,6 +44,7 @@ class _ForgetpasswordScreenState extends State<ForgetpasswordScreen> {
               SizedBox(height: 32.h),
               TextfeildWidget(
                 hinttext: "Enter your email",
+                inputType: TextInputType.emailAddress,
                 controller: emailControler,
                 validator: (p0) {
                   if (p0!.isEmpty) {
